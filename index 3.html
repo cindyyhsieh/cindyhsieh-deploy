@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cindy Hsieh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 9999px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React and ReactDOM CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(
+        React.createElement('div', null, [
+          React.createElement('img', {
+            src: 'https://drive.google.com/uc?export=view&id=1a-Sxb_At_eYvXrQhXBWPkBAjZcQdsOWd',
+            alt: 'Cindy Hsieh'
+          }),
+          React.createElement('h1', { style: { fontSize: '2.5rem', fontWeight: 'bold' } }, 'Cindy Hsieh'),
+          React.createElement('p', { style: { fontSize: '1.25rem', color: '#555' } }, 'Cellist | Performer | Collaborator')
+        ])
+      );
+    </script>
+  </body>
+</html>
